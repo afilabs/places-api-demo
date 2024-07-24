@@ -1,0 +1,64 @@
+.nearby-places-container {
+  margin-top: 16px;
+  
+  .place-type-filter {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgba(33, 33, 33, 1);
+  }
+
+  .place-list {
+    margin-top: 16px;
+    .place-item {
+      margin-bottom: 8px;
+      padding: 8px;
+      border-radius: 8px;
+      background-color: rgba(244, 244, 244, 1);
+
+      p {
+        margin: 0;
+      }
+      
+      .top-content {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        .left-img {
+          width: 56px;
+          height: 56px;
+          border-radius: 4px;
+        }
+        
+        .right-content {
+          color: rgba(33, 33, 33, 1);;
+          font-size: 14px;
+  
+          .name {
+            font-weight: 700;
+            line-height: 24px;
+          }
+  
+          .rating {
+            display: flex;
+            align-items: center;
+          }
+
+          .place-type, .rating {
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .address {
+        margin-top: 6px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: rgba(136, 136, 136, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.left-box-map {
+  position: absolute;
+  z-index: 1;
+  width: 336px;
+  height: calc(100% - 76px);
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 16px;
+  color: #212121;
+  background-color: #fff;
+  top: 24px;
+  left: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+}
