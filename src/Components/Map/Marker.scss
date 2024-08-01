@@ -1,0 +1,23 @@
+.marker {
+  position: relative;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    animation: jump 0.6s infinite;
+
+    img {
+      filter: brightness(90%);
+    }
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-4px);
+  }
+}

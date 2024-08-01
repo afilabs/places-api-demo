@@ -1,6 +1,6 @@
 {
-  "short_name": "Place finder React App",
-  "name": "Create Place finder React App",
+  "short_name": "Places API Demo",
+  "name": "Places API Demo",
   "icons": [
     {
       "src": "favicon.ico",

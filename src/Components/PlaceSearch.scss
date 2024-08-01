@@ -1,0 +1,39 @@
+.place-search {
+  position: relative;
+  z-index: 10;
+
+  input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .suggestion-list {
+    position: absolute;
+    background: #fff;
+    max-height: calc(100vh - 182px);
+    margin-top: 8px;
+    overflow-y: auto;
+    padding: 12px 8px;
+    border-radius: 8px;
+    box-shadow:
+      0 0 1px rgba(0, 0, 0, 0.24),
+      0 2px 4px rgba(0, 0, 0, 0.04),
+      0 1px 4px rgba(0, 0, 0, 0.16);
+
+    .suggestion-item {
+      padding: 4px 8px;
+      list-style: none;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+}
