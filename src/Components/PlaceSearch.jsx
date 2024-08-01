@@ -57,6 +57,7 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
           results.map((p) => ({
             types: p.types.join(', '),
             vicinity: p.vicinity,
+            matchedType: p.types.find((t) => allTypes.has(t)),
           })),
         );
         const filteredPlaces = results.reduce((places, place) => {
