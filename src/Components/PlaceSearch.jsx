@@ -53,6 +53,12 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
       const allTypes = new Set(Object.keys(PLACE_TYPES));
 
       const handleNearbyResults = (results) => {
+        console.log(
+          results.map((p) => ({
+            types: p.types.join(', '),
+            vicinity: p.vicinity,
+          })),
+        );
         const filteredPlaces = results.reduce((places, place) => {
           const type = place.types.find((t) => allTypes.has(t));
           if (type) {

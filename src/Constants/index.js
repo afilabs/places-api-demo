@@ -7,6 +7,7 @@ import { ReactComponent as SchoolIcon } from '../assets/images/school_icon.svg';
 import { ReactComponent as SupermarketIcon } from '../assets/images/supermarket_icon.svg';
 import { ReactComponent as LiquorStoreIcon } from '../assets/images/liquor_store_icon.svg';
 import { ReactComponent as CafeIcon } from '../assets/images/cafe_icon.svg';
+import { ReactComponent as RestaurantIcon } from '../assets/images/restaurant_icon.svg';
 
 import { ReactComponent as BankMarker } from '../assets/images/bank_marker.svg';
 import { ReactComponent as CafeMarker } from '../assets/images/cafe_marker.svg';
@@ -17,6 +18,7 @@ import { ReactComponent as LaundryMarker } from '../assets/images/laundry_marker
 import { ReactComponent as SchoolMarker } from '../assets/images/school_marker.svg';
 import { ReactComponent as SupermarketMarker } from '../assets/images/supermarket_marker.svg';
 import { ReactComponent as LiquorStoreMarker } from '../assets/images/liquor_store_marker.svg';
+import { ReactComponent as RestaurantMarker } from '../assets/images/restaurant_marker.svg';
 
 export const PLACE_TYPES = {
   accounting: { label: 'Accounting', dropdownIcon: BankIcon, markerIcon: BankMarker },
@@ -36,6 +38,9 @@ export const PLACE_TYPES = {
   university: { label: 'University', dropdownIcon: SchoolIcon, markerIcon: SchoolMarker },
   supermarket: { label: 'Supermarket', dropdownIcon: SupermarketIcon, markerIcon: SupermarketMarker },
   convenience_store: { label: 'Convenience Store', dropdownIcon: SupermarketIcon, markerIcon: SupermarketMarker },
+  meal_delivery: { label: 'Meal Delivery', dropdownIcon: RestaurantIcon, markerIcon: RestaurantMarker },
+  meal_takeaway: { label: 'Meal Takeaway', dropdownIcon: RestaurantIcon, markerIcon: RestaurantMarker },
+  restaurant: { label: 'Restaurant', dropdownIcon: RestaurantIcon, markerIcon: RestaurantMarker },
 };
 
 export const PLACE_TYPE_OPTIONS = Object.keys(PLACE_TYPES).map((key) => ({
