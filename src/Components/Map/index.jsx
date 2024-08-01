@@ -20,7 +20,7 @@ const Map = ({ myLocation, places, activePlace, onMarkerClick }) => {
     <>
       <Gmap
         mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
-        defaultZoom={10}
+        defaultZoom={15}
         defaultCenter={{ lat: 22.27959367341436, lng: 114.17736930896572 }}
         gestureHandling={'greedy'}
         disableDefaultUI={true}
