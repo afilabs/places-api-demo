@@ -2,13 +2,13 @@
   position: relative;
   cursor: pointer;
 
+  svg {
+    height: auto;
+  }
+
   &.active,
   &:hover {
     animation: jump 0.6s infinite;
-
-    img {
-      filter: brightness(90%);
-    }
   }
 }
 
