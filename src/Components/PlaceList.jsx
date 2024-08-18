@@ -12,7 +12,7 @@ const PlaceList = ({ placeList = [], activePlace, onPlaceClick }) => {
   }, [activePlace]);
 
   return (
-    <div className="place-list">
+    <div className="PlaceList">
       {placeList.map((place) => (
         <PlaceItem
           key={place.place_id}

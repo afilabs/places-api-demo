@@ -23,7 +23,7 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
     (placeDetails) => {
       if (!placeService || !placeDetails.geometry) return;
 
-      const allTypes = new Set(Object.keys(PLACE_TYPES));
+      const allTypes = Object.keys(PLACE_TYPES);
 
       placeService.nearbySearch(
         {
@@ -31,20 +31,12 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
           radius: 500,
         },
         (results) => {
-          console.log(
-            results.map((p) => ({
-              types: p.types.join(', '),
-              vicinity: p.vicinity,
-              matchedType: p.types.find((t) => allTypes.has(t)),
-            })),
-          );
           const filteredPlaces = results
             .map((place) => ({
               ...place,
-              type: place.types.find((t) => allTypes.has(t)),
+              type: place.types.find((t) => allTypes.includes(t)),
             }))
             .filter((place) => place.type);
-
           onNearbyResultsReceived(filteredPlaces);
         },
       );
@@ -73,7 +65,7 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
   );
 
   return (
-    <div className="place-search">
+    <div className="PlaceSearch">
       <PlaceAutocompleteInput onPlaceSelect={handlePlaceSelect} />
     </div>
   );

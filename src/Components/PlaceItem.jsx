@@ -11,7 +11,7 @@ const PlaceItem = forwardRef(
       : DefaultPlaceImg;
 
     return (
-      <div ref={ref} className={`place-item ${active ? 'active' : ''}`} onClick={onClick}>
+      <div ref={ref} className={`PlaceItem ${active ? 'active' : ''}`} onClick={onClick}>
         <div className="top-content">
           <img className="item-image" alt={name} src={imageUrl} />
           <div className="details">

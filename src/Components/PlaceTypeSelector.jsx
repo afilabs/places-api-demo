@@ -28,7 +28,7 @@ const DropdownOption = ({ data, ...props }) => {
 
 const PlaceTypeSelector = ({ options, selectedOptions, onSelectionChange }) => {
   return (
-    <div className="place-type-selector">
+    <div className="PlaceTypeSelector">
       <label className="selector-label">Place Types</label>
       <Select
         closeMenuOnSelect={false}

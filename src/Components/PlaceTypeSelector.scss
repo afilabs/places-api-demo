@@ -1,4 +1,4 @@
-.place-type-selector {
+.PlaceTypeSelector {
   margin-top: 16px;
 
   .selector-label {
@@ -7,30 +7,30 @@
     line-height: 16px;
     color: rgba(33, 33, 33, 1);
   }
-}
 
-.multi-value-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+  .multi-value-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
 
-.multi-value-icon {
-  width: 20px;
-  height: 20px;
-}
+  .multi-value-icon {
+    width: 20px;
+    height: 20px;
+  }
 
-.dropdown-option {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0;
-  background-color: inherit;
-  cursor: pointer;
-}
+  .dropdown-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background-color: inherit;
+    cursor: pointer;
+  }
 
-.option-color-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: inherit;
+  .option-color-indicator {
+    height: 8px;
+    width: 8px;
+    background-color: inherit;
+  }
 }
