@@ -1,18 +1,12 @@
-### `npm start`
+# places_api_demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Google Nearby Search API](https://blog.afi.io/content/images/size/w1600/2024/07/Place-Finder--3-.png " Google Nearby Search API")
 
-### `npm test`
+Taken from: 
+- Finding the right place with the Google Places API (part 1 of 5)
+- Google Places Autocomplete API (part 2 of 5)
+- Google Places Place Details API and Place Photos API (part 3 of 5)
+- [Google Nearby Search API (part 4 of 5)](https://afi.io/blog/google-nearby-search-api/)
+- Google Places API: Text Search (part 5 of 5)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Please contact afian@afi.io if you have any questions or suggestions. Pull requests are welcome.
