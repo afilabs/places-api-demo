@@ -61,7 +61,7 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
         },
       );
     },
-    [placeService, onSelectPlace, searchNearbyPlaces, autocompleteToken],
+    [placeService, onSelectPlace, searchNearbyPlaces],
   );
 
   return (
