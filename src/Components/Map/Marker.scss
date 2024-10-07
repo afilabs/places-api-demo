@@ -8,7 +8,9 @@
 
   &.active,
   &:hover {
-    animation: jump 0.6s infinite;
+    svg {
+      animation: jump 0.6s infinite;
+    }
   }
 }
 
