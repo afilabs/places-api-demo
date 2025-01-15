@@ -1,0 +1,25 @@
+.marker {
+  position: relative;
+  cursor: pointer;
+
+  svg {
+    height: auto;
+  }
+
+  &.active,
+  &:hover {
+    svg {
+      animation: jump 0.6s infinite;
+    }
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-4px);
+  }
+}

@@ -1,0 +1,18 @@
+.PlaceSearch {
+  position: relative;
+  z-index: 10;
+
+  input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.pac-item {
+  cursor: pointer;
+}

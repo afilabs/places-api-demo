@@ -1,0 +1,57 @@
+.PlaceItem {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgba(244, 244, 244, 1);
+  cursor: pointer;
+
+  &.active {
+    border: 1px solid #9a9797;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .top-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .item-image {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+  }
+
+  .details {
+    color: rgba(33, 33, 33, 1);
+    font-size: 14px;
+
+    .item-name {
+      font-weight: bold;
+      line-height: 24px;
+    }
+
+    .item-rating {
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      line-height: 20px;
+    }
+
+    .item-type {
+      font-weight: normal;
+      line-height: 20px;
+    }
+  }
+
+  .item-address {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    color: rgba(136, 136, 136, 1);
+  }
+}
