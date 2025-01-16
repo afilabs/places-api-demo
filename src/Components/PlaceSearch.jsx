@@ -10,6 +10,7 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
   const googleMaps = useMapsLibrary('places');
 
   const [placeService, setPlaceService] = useState(null);
+  const [nearbyResults, setNearbyResults] = useState([]);
   const [autocompleteToken, setAutocompleteToken] = useState(null);
 
   useEffect(() => {
@@ -18,7 +19,6 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
       setAutocompleteToken(new googleMaps.AutocompleteSessionToken());
     }
   }, [map, googleMaps]);
-
   const searchNearbyPlaces = useCallback(
     (placeDetails) => {
       if (!placeService || !placeDetails.geometry) return;
@@ -30,24 +30,36 @@ const PlaceSearch = ({ onSelectPlace, onNearbyResultsReceived }) => {
           location: placeDetails.geometry.location,
           radius: 500,
         },
-        (results) => {
+        (results, status, pagination) => {
+          if (status !== 'OK' || !results) return;
+
           const filteredPlaces = results
             .map((place) => ({
               ...place,
               type: place.types.find((t) => allTypes.includes(t)),
             }))
             .filter((place) => place.type);
-          onNearbyResultsReceived(filteredPlaces);
+
+          setNearbyResults((prev) => {
+            const updatedResults = [...prev, ...filteredPlaces];
+            if (!pagination || !pagination.hasNextPage) {
+              onNearbyResultsReceived(updatedResults);
+            }
+            return updatedResults;
+          });
+
+          if (pagination && pagination.hasNextPage) {
+            pagination.nextPage();
+          }
         },
       );
     },
-    [placeService, onNearbyResultsReceived],
+    [placeService, onNearbyResultsReceived, nearbyResults],
   );
 
   const handlePlaceSelect = useCallback(
     (place) => {
       if (!place || !placeService) return;
-
       placeService.getDetails(
         {
           placeId: place.place_id,

@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react';
 import { APIProvider } from '@vis.gl/react-google-maps';
+import React, { useEffect, useMemo, useState } from 'react';
+import Map from './Components/Map';
+import PlaceList from './Components/PlaceList';
 import PlaceSearch from './Components/PlaceSearch';
 import PlaceTypeSelector from './Components/PlaceTypeSelector';
-import PlaceList from './Components/PlaceList';
-import Map from './Components/Map';
 import { PLACE_TYPE_OPTIONS } from './Constants';
 import { getAvailablePlaceTypeOptions } from './Utils';
 
