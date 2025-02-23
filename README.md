@@ -7,7 +7,7 @@ Taken from:
 - [Google Places Autocomplete API (part 2 of 5)](https://www.afi.io/blog/google-address-autocomplete-with-the-places-api/)
 - [Google Places Place Details API and Place Photos API (part 3 of 5)](https://www.afi.io/blog/google-place-details-and-place-photos-api)
 - [Google Nearby Search API (part 4 of 5)](https://afi.io/blog/google-nearby-search-api/)
-- Google Places API: Text Search (part 5 of 5)
+- [Google Places API: Text Search (part 5 of 5)](https://blog.afi.io/blog/google-places-text-search/)
 
 How to run the app:
 
