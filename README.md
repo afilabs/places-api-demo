@@ -17,3 +17,9 @@ How to run the app:
 4. Run `npm start`
 
 Please contact afian@afi.io if you have any questions or suggestions. Pull requests are welcome.
+
+## Analytics
+
+`public/index.html` loads Google Analytics (GA4, Measurement ID `G-XVRTNLV3M3`, the shared "Afi.dev - GA4" property used
+by all afi.dev demos). Page views, sessions, traffic sources and devices are recorded automatically; no address or
+coordinates are sent. Remove the snippet from `public/index.html` to disable it.
